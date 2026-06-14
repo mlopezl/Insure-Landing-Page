@@ -7,8 +7,23 @@
     <title>insure-landing-page</title>
     <link rel="stylesheet" href="./src/style.css">
   </head>
-  <body>
-    <h1 class="bg-red-300">Hola Mundo</h1>
+  <body class="font-DM min-h-screen">
+    <header>
+      <nav class="w-full h-20 p-4 flex justify-between items-center">
+        <img src="./public/images/logo.svg" alt="Insure Logo">
+        <img src="./public/images/icon-hamburger.svg" alt="Hamburger icon">
+      </nav>
+      <section class="hero w-full bg-Blue-950">
+        <img class="w-full" src="./public/images/image-intro-mobile.jpg" alt="intro mobile image">
+        <section class="hero__info h-120 flex flex-col justify-center items-center text-center gap-6 p-4 relative">
+          <img class="w-37 absolute top-0 left-0 z-1" src="./public/images/bg-pattern-intro-left-mobile.svg" alt="pattern left mobile">
+          <img class="w-25 absolute -bottom-35 right-0 z-1" src="./public/images/bg-pattern-intro-right-mobile.svg" alt="pattern left mobile">
+          <h1 class="text-[45px]/10 text-Gray-50 font-semibold tracking-tight z-2">Humanizing your insurance.</h1>
+          <p class="text-Gray-700 brightness-160 font-extralight">Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that's right for you. Ensure you and your loved ones are protected.</p>
+          <button class="border-2 w-32 h-10 mt-2 border-Gray-50 p-1 text-Gray-50 text-xs font-semibold tracking-wider uppercase brightness-80">View Plans</button>
+        </section>
+      </section>
+    </header>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
