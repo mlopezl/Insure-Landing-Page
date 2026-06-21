@@ -26,16 +26,19 @@
       <img id="hamburger-icon" src="./public/images/icon-hamburger.svg" alt="Hamburger icon" class="md:hidden">
       <img id="close-icon" class="hidden" src="./public/images/icon-close.svg" alt="Close icon">
     </nav>
-    <section class="hero w-full bg-Blue-950 flex flex-col sm:flex-row">
-      <img class="w-full sm:w-1/2 sm:order-2" src="./public/images/image-intro-mobile.jpg" alt="intro mobile image">
+    <section class="hero w-full bg-Blue-950 flex flex-col relative sm:flex-row sm:items-center xl:h-150">
+      <img class="hidden w-90 absolute right-0 top-0 z-2 md:block" src="./public/images/bg-pattern-intro-right-desktop.svg" alt="">
+      <img class="w-full sm:w-1/2 sm:order-2 md:hidden" src="./public/images/image-intro-mobile.jpg" alt="intro mobile image">
+      <img class="hidden absolute max-w-80 top-30 right-0 lg:right-20 xl:right-35 md:max-w-100 xl:max-w-120 md:block" src="./public/images/image-intro-desktop.jpg" alt="Image intro desktop">
       <section
-        class="hero__info h-120 flex flex-col justify-center items-center text-center gap-6 p-4 relative sm:w-1/2">
-        <img class="w-37 absolute top-0 left-0 z-1" src="./public/images/bg-pattern-intro-left-mobile.svg"
+        class="h-120 flex flex-col pl-10 xl:pl-50 justify-center items-center text-center gap-6 p-4 relative sm:w-1/2 md:items-start md:text-left">
+        <img class="w-37 absolute top-0 left-0 z-1 sm:hidden" src="./public/images/bg-pattern-intro-left-mobile.svg"
           alt="pattern left mobile">
         <img class="w-25 absolute -bottom-35 right-0 z-1 sm:hidden"
           src="./public/images/bg-pattern-intro-right-mobile.svg" alt="pattern left mobile">
-        <h1 class="text-[43px]/10 text-Gray-50 font-semibold tracking-tight z-2">Humanizing your insurance.</h1>
-        <p class="text-Gray-700 brightness-160 font-extralight">Get your life insurance coverage easier and faster. We
+        <div class="hidden w-35 h-1 border-t-2 border-Gray-700 brightness-180 md:block"></div>
+        <h1 class="md:w-80  text-[43px]/10 text-Gray-50 lg:w-120 lg:text-6xl font-semibold tracking-tight z-2">Humanizing <br> your insurance.</h1>
+        <p class="md:w-80 xl:w-100 text-Gray-700 brightness-160 font-extralight">Get your life insurance coverage easier and faster. We
           blend our expertise and technology to help you find the plan that's right for you. Ensure you and your loved
           ones are protected.</p>
         <button
